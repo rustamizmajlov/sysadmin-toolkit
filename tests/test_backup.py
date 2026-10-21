@@ -11,7 +11,7 @@ def project(tmp_path):
     (src / "sub").mkdir(parents=True)
     (src / "a.txt").write_text("hello")
     (src / "sub" / "b.txt").write_text("world")
-    (src / "temp.tmp").write_text("мусор")
+    (src / "temp.tmp").write_text("мусор", encoding="utf-8")
     return src
 
 
